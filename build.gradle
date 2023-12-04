@@ -412,8 +412,18 @@ publishing {
                 }
             }
         }
+    }
 
-        // TODO: Repositories to publish to...
+    repositories {
+        maven {
+            name = "tterrag"
+            url = "https://maven.tterrag.com/"
+
+            credentials {
+                username = System.getenv("TT_MAVEN_USER")
+                password = System.getenv("TT_MAVEN_PASSWORD")
+            }
+        }
     }
 }
 

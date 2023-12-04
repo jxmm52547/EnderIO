@@ -84,7 +84,7 @@ Update your `build.gradle` to contain the following:
 
 ```groovy
 repositories {
-    maven { url 'https://maven.rover656.dev/releases' }
+    maven { url 'https://maven.tterrag.com/' }
 }
 
 dependencies {
